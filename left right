@@ -1,27 +1,70 @@
 
-                                    <div class="col-sm-12 hrow">
-                                        <div class="row">
-                                            <div class="col-sm-6 himage">
-                                                <img src="public/images/cars/grand-i10-nios/highlights/Exterior/ext-1.jpg" />
-                                            </div>
-                                            <div class="col-sm-6 hcontent">
-                                                <h5>Projector Fog Lamps</h5>
-                                                <p>
-                                                 The unique projector fog lamps with chrome surround perfectly blend functionality with the sporty design of GRAND i10 NIOS
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 hrow">
-                                        <div class="row">
-                                            <div class="col-sm-6 himage">
-                                                <img src="public/images/cars/grand-i10-nios/highlights/Exterior/ext-2.jpg" />
-                                            </div>
-                                            <div class="col-sm-6 hcontent">
-                                                <h5>Emergency Stop Signal</h5>
-                                                <p>
-                                               Frequent flashing at times of sudden braking for the rear vehicle's attention to avoid collision
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+    #PageContent.car-details .highlightscarousel .hrow + .hrow {
+        margin-top: 30px;
+    }
+
+    #PageContent.car-details .highlightscarousel .hrow .himage[class*="col-"] {
+        text-align: center;
+    }
+
+@media screen and (min-width: 768px) {
+    #PageContent.car-details .highlightscarousel .hrow + .hrow .himage {
+        float: right;
+    }
+}
+
+#PageContent.car-details .highlightscarousel .hrow .himage .himage-wrap {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+}
+
+#PageContent.car-details .highlightscarousel .hrow > .hcontent > * {
+    display: inline-block;
+    width: 80%;
+    margin-top: 0;
+    color: #7F868C;
+}
+
+#PageContent.car-details .highlightscarousel .hrow .hcontent h5 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #847248;
+    text-transform: uppercase;
+}
+
+#PageContent.car-details .highlightscarousel .hrow + .hrow > .hcontent {
+    text-align: right;
+}
+
+#PageContent.car-details .highlightscarousel .hrow + .hrow .hcontent > * {
+    text-align: left;
+}
+
+@media screen and (min-width: 767px) {
+    #PageContent.car-details .highlightscarousel .hrow .himage .hcontent {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        padding: 10px 15px;
+        left: 57%;
+        text-align: left;
+    }
+
+        #PageContent.car-details .highlightscarousel .hrow .himage .hcontent.left-content {
+            right: 60%;
+            left: 0;
+        }
+
+        #PageContent.car-details .highlightscarousel .hrow .himage .hcontent > * {
+            color: #fff !important;
+        }
+
+        #PageContent.car-details .highlightscarousel .hrow .himage .hcontent.black {
+            background: rgba(255,255,255,0.7);
+        }
+
+            #PageContent.car-details .highlightscarousel .hrow .himage .hcontent.black > * {
+                color: #000 !important;
+            }
+}
